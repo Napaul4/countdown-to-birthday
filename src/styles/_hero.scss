@@ -1,0 +1,39 @@
+@use "variaveis";
+
+.hero {
+  background-color: variaveis.$header-blue;
+  padding: 60px 0;
+
+  .container {
+    .hero__description {
+      max-width: 450px;
+
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      span {
+        font-size: 2.5rem;
+        text-align: right;
+        display: block;
+      }
+    }
+  }
+
+  &__image {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    filter: contrast(1.5);
+  }
+
+  &__veja-atracoes {
+    font-size: 16px;
+    margin-top: 40px;
+    text-align: center;
+
+    .down {
+      margin-top: 12px;
+    }
+  }
+}

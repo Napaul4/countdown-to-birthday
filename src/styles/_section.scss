@@ -1,0 +1,66 @@
+@use "variaveis";
+
+.section {
+  &__livros {
+    background-image: linear-gradient(
+      variaveis.$header-blue,
+      variaveis.$linear-blue2
+    );
+  }
+
+  &__cama {
+    background-image: linear-gradient(
+      variaveis.$linear-blue2,
+      variaveis.$linear-blue3
+    );
+
+    .flex-container {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__piquenique {
+    background-image: linear-gradient(
+      variaveis.$linear-blue3,
+      variaveis.$linear-bege
+    );
+  }
+
+  &__gatinhos {
+    background-image: linear-gradient(
+      variaveis.$linear-bege,
+      variaveis.$begeDark
+    );
+
+    .flex-container {
+      flex-direction: row-reverse;
+    }
+
+    .container {
+      padding: 5rem 40px;
+    }
+  }
+
+  &__pipoca {
+    background-color: variaveis.$begeDark;
+  }
+
+  .container {
+    align-items: center;
+  }
+
+  &__image {
+    width: 200px;
+  }
+
+  &__description {
+    h2 {
+      font-size: 1.7rem;
+      margin-bottom: 12px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
+}
